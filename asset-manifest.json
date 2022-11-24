@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Random-Star-Wars-Characters/static/css/main.871bf103.css",
+    "main.js": "/Random-Star-Wars-Characters/static/js/main.ac73c3d8.js",
+    "static/js/787.633816a4.chunk.js": "/Random-Star-Wars-Characters/static/js/787.633816a4.chunk.js",
+    "index.html": "/Random-Star-Wars-Characters/index.html",
+    "main.871bf103.css.map": "/Random-Star-Wars-Characters/static/css/main.871bf103.css.map",
+    "main.ac73c3d8.js.map": "/Random-Star-Wars-Characters/static/js/main.ac73c3d8.js.map",
+    "787.633816a4.chunk.js.map": "/Random-Star-Wars-Characters/static/js/787.633816a4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.871bf103.css",
+    "static/js/main.ac73c3d8.js"
+  ]
+}
