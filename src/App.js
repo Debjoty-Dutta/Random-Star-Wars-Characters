@@ -18,27 +18,29 @@ class StarWars extends React.Component {
     }
   }
   getNewCharcter (){
-    const url = `https://akabab.github.io/starwars-api/api/id/${Math.floor(Math.random() * 88)}.json`
+    const url = `https://rawcdn.githack.com/akabab/starwars-api/0.2.1/api/id/${Math.floor(Math.random() * 88)}.json`
     fetch(url)
       .then(responce => responce.json())
       .then(data => {
         console.log(data.gender)
-        // if (data.gender === "male"){
-        //   // this.setState({
-        //   //   loadedchracter: false
-        //   // })
-        //   <getNewCharcter/>
-        // }
-        this.setState({
-          loadedchracter: true,
-          name: data.name,
-          height: data.height,
-          mass: data.mass,
-          gender: data.gender,
-          homeworld: data.homeworld,
-          species: data.species,
-          image: data.image
-        })
+        if (data.gender === "male"){
+          this.setState({
+            loadedchracter: false
+          })
+          this.getNewCharcter()
+        }
+        else {
+          this.setState({
+            loadedchracter: true,
+            name: data.name,
+            height: data.height,
+            mass: data.mass,
+            gender: data.gender,
+            homeworld: data.homeworld,
+            species: data.species,
+            image: data.image
+          })
+        }
       })
       
   }
